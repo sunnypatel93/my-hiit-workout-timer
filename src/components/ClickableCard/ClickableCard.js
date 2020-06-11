@@ -1,15 +1,18 @@
 import React, {PureComponent} from 'react'
 import PropTypes from 'prop-types'
-import './Card.scss'
+import './ClickableCard.scss'
 
-export default class Card extends PureComponent {
+export default class ClickableCard extends PureComponent {
   static propTypes = {
-    text: PropTypes.string
+    text: PropTypes.string,
+    onClick: PropTypes.func
   }
   render(){
     return (
       <div className='card'>
-        <button className='button'> 
+        <button 
+        onClick={this.props.onClick}
+        className='button'> 
           {this.props.text} 
         </button>
       </div>

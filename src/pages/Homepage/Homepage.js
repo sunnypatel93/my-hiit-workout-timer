@@ -1,16 +1,20 @@
 import React, {PureComponent} from 'react'
 import './Homepage.scss'
-import Card from '../../components/Card'
-
+import ClickableCard from '../../components/ClickableCard'
 
 export default class Homepage extends PureComponent {
+  
+  handleOnClick() {
+    console.log('hello')
+  }
+
   render() {
     return (
       <div>
-        <Card text='HIIT Workout'/>
-        <Card text='Circuit Training'/>
-        <Card text='Random Timer'/>
-        <Card text='Custom Workout'/>
+        <ClickableCard text='HIIT Workout' onClick={this.handleOnClick}/>
+        <ClickableCard text='Circuit Training'/>
+        <ClickableCard text='Random Timer'/>
+        <ClickableCard text='Custom Workout'/>
       </div>
     )
   }
