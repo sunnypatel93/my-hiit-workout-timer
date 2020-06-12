@@ -15,12 +15,8 @@ export default class Homepage extends PureComponent {
       <div>
     
 
-    <Link to="/hiit-timer"> <ClickableCard text='HIIT Workout' onClick={this.handleOnClick}/> </Link>
-       <ClickableCard text='Circuit Training'/>
-          <ClickableCard text='Random Timer'/> 
-          <ClickableCard text='Custom Workout'/> 
-
-       
+    <Link to="/my-workout"> <ClickableCard text='My Workout' /> </Link>
+    <Link to="/random-workout"> <ClickableCard text='Random Workout' /> </Link>
       </div>
     )
   }
