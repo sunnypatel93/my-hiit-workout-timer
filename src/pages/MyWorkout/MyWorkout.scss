@@ -3,15 +3,13 @@ h1 {
     text-align: center;
 }
 
-label {
-    font-size: 20px;
+form {
+    padding-left: 20px;
 }
 
-input {
-    width: 200px;
-    height: 30px;
-}
-
-.input-with-label-wrapper {
-    padding: 20px;
+button {
+    margin: 10px 0;
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
 }

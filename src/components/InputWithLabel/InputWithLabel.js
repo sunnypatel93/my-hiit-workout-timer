@@ -1,6 +1,8 @@
 import React, {PureComponent} from 'react'
 import PropTypes from 'prop-types'
 
+import './InputWithLabel.scss'
+
 export default class InputWithLabel extends PureComponent {
 
   static props = {

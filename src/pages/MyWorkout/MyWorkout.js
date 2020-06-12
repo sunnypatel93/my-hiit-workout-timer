@@ -16,6 +16,8 @@ export default class MyWorkout extends PureComponent {
               labelText='Sets'
               inputType='number'
             />
+
+            <button type='submit'> Submit </button>
         </form>
 
       </div>
