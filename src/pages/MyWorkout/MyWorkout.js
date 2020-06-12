@@ -3,6 +3,11 @@ import InputWithLabel from '../../components/InputWithLabel'
 import './MyWorkout.scss'
 
 export default class MyWorkout extends PureComponent {
+  
+  onSubmit() {
+    console.log('heello')
+  }
+  
   render(){
     return(
       <div>
@@ -17,7 +22,7 @@ export default class MyWorkout extends PureComponent {
               inputType='number'
             />
 
-            <button type='submit'> Submit </button>
+            <button type='submit' onClick={this.onSubmit}> Submit </button>
         </form>
 
       </div>
