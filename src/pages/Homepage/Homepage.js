@@ -1,8 +1,7 @@
 import React, {PureComponent} from 'react'
 import './Homepage.scss'
 import ClickableCard from '../../components/ClickableCard'
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
-import HiitTimer from '../HiitTimer'
+import {Link} from 'react-router-dom'
 
 export default class Homepage extends PureComponent {
   
